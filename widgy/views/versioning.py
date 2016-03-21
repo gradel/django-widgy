@@ -197,6 +197,7 @@ class RevertView(PopupView, AuthorizedMixin, VersionTrackerMixin, FormView):
     permission_error_message = _("You don't have permission to revert.")
 
     def get_context_data(self, **kwargs):
+        self.object = self.get_object()
         kwargs['title'] = _('Revert Commit')
         kwargs['commit'] = self.object
         kwargs['tracker'] = self.object.tracker
