@@ -35,15 +35,4 @@ class Migration(migrations.Migration):
             },
             bases=(widgy.contrib.widgy_mezzanine.models.WidgyPageMixin, 'pages.page'),
         ),
-        migrations.CreateModel(
-            name='UndeletePage',
-            fields=[
-            ],
-            options={
-                'ordering': ('_order',),
-                'verbose_name': 'restore deleted page',
-                'proxy': True,
-            },
-            bases=(get_page_model(),),
-        ),
     ]
