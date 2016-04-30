@@ -21,4 +21,5 @@ li.shelfItem {
   @include node-icon("widgets.image", "widgy/image/widget-image.gif");
   @include node-icon("widgets.slide", "widgy/image/widget-image.gif");
   @include node-icon("widgets.html", "widgy/image/widget-html.png");
+  @include node-icon("widgets.googlemap", "widgy/image/widget-google-map.png");
 }
